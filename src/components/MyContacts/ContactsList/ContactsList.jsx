@@ -1,13 +1,13 @@
 import css from './ContactsList.module.css';
 import { toast } from 'react-toastify';
 import { useDispatch, useSelector } from 'react-redux';
-import { deleteContact, fetchContacts } from 'redux/operations';
+import { deleteContact, fetchContacts } from 'redux/contacts/operations';
 import {
   getFilterValue,
   getContacts,
   getIsLoading,
   getError,
-} from 'redux/selectors';
+} from 'redux/contacts/selectors';
 import { useEffect } from 'react';
 import Loader from '../Loader/Loader';
 
