@@ -1,7 +1,7 @@
 import css from './ContactsList.module.css';
 import { toast } from 'react-toastify';
 import { useDispatch, useSelector } from 'react-redux';
-import { deleteContact, fetchContacts } from 'redux/auth/operations';
+import { deleteContact, fetchContacts } from 'redux/operations';
 import {
   getFilterValue,
   getContacts,
