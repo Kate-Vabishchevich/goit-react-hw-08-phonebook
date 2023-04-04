@@ -1,9 +1,9 @@
 import css from './MyContacts.module.css';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import ContactsForm from './ContactsForm/ContactsForm';
-import ContactsSearch from './ContactsSearch/ContactsSearch';
-import ContactsList from './ContactsList/ContactsList';
+import ContactsForm from '../../components/MyContacts/ContactsForm/ContactsForm';
+import ContactsSearch from '../../components/MyContacts/ContactsSearch/ContactsSearch';
+import ContactsList from '../../components/MyContacts/ContactsList/ContactsList';
 
 const MyContacts = () => {
   return (

@@ -1,4 +1,8 @@
-import MyContacts from "./MyContacts/MyContacts";
+import { useEffect, lazy } from 'react';
+import { useDispatch } from 'react-redux';
+import { Route, Routes } from 'react-router-dom';
+
+import MyContacts from '../pages/Contacts/MyContacts';
 
 export const App = () => {
   return (
