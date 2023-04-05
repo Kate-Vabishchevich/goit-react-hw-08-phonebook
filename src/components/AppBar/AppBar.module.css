@@ -3,5 +3,11 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
-  border-bottom: 1px solid #2a363b;
+  background-color: blue;
+  margin: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  box-shadow: 1px 3px 4px 0px rgb(181, 172, 172);
 }
