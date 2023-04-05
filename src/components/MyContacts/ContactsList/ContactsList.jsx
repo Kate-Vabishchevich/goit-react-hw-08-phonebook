@@ -9,7 +9,7 @@ import {
   getError,
 } from 'redux/contacts/selectors';
 import { useEffect } from 'react';
-import Loader from '../Loader/Loader';
+import Loader from '../../Loader/Loader';
 
 const ContactsList = () => {
   const dispatch = useDispatch();
@@ -31,10 +31,10 @@ const ContactsList = () => {
       {isLoading && <Loader />}
       {onError && toast.error('Something wrong')}
       <ol className={css.list}>
-        {filteredContacts.map(({ name, phone, id }) => {
+        {filteredContacts.map(({ name, number, id }) => {
           return (
             <li className={css.item} key={id}>
-              {name}: {phone}
+              {name}: {number}
               <button
                 className={css.btn}
                 onClick={() => dispatch(deleteContact(id))}

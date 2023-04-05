@@ -20,13 +20,13 @@ const ContactsForm = () => {
       contacts.find(
         contact =>
           contact.name.toLocaleLowerCase() === name.toLocaleLowerCase() ||
-          contact.phone === number
+          contact.number === number
       )
     ) {
       reset();
       return toast.error(`${name} or ${number} is already in contacts.`);
     } else {
-      dispatch(addContact({ name, phone: number }));
+      dispatch(addContact({ name, number }));
       reset();
     }
   };
