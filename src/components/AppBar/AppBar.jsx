@@ -12,7 +12,7 @@ export const AppBar = () => {
 
   return (
     <div style={{ maxWidth: 960, margin: '0 auto', padding: '0 16px' }}>
-      <header className={css.hesder}>
+      <header className={css.header}>
         <Navigation />
         {isLoggedIn ? <UserMenu /> : <AuthNav />}
       </header>
