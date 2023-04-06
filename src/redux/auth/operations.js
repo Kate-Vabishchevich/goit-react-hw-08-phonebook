@@ -18,6 +18,7 @@ export const register = createAsyncThunk(
     try {
       const res = await axios.post('/users/signup', credentials);
       setAuthHeader(res.data.token);
+      toast.success('Hi! Registration successful');
       return res.data;
     } catch (error) {
       if (error.response.status === 400) {
